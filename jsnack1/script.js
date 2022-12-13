@@ -17,9 +17,7 @@ for (let i = 0; i < 10 ; i++) {
         alert('digitare carattere numerico');
         break;
     }
-    else{
-        somma += userNumber;
-    }
+    somma += userNumber;
 }
 // STAMPARE LA SOMMA NEL DOM
 finalNumber.innerText = 'La somma dei tuoi numeri è:'+ ' ' + somma; 
