@@ -5,11 +5,6 @@ Il software deve chiedere per 10 volte all’utente di inserire un numero.
 Il programma stampa la somma di tutti i numeri inseriti.
 */
 
-/*
-1. Prendere elementi dal DOM
-2. Chiedere 10 volte all'utente di inserire un numero
-3. Stampare la somma dei numeri inseriti dall'utente
-*/
 // PRENDERE ELEMENTI DAL DOM:
 const finalNumber = document.getElementById('final-number');
 
@@ -20,11 +15,11 @@ for (let i = 0; i < 10 ; i++) {
     const userNumber = parseInt(prompt('Digita un numero'));
     if (!userNumber) {
         alert('digitare carattere numerico');
-        return;
+        break;
     }
     else{
         somma += userNumber;
     }
 }
-    
+// STAMPARE LA SOMMA NEL DOM
 finalNumber.innerText = 'La somma dei tuoi numeri è:'+ ' ' + somma; 
